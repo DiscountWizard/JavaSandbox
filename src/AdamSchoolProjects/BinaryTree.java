@@ -2,25 +2,22 @@ package AdamSchoolProjects;
 
 public class BinaryTree {
 
-    private Node _root, _leftChild, _rightChild;
+    private BinaryNode _root;
 
     public BinaryTree() {
-        this(null, null, null);
+        this(null);
     }
 
-    public BinaryTree(Node root) {
-        this(root, null, null);
-    }
-
-    public BinaryTree(Node root, Node leftChild, Node rightChild) {
+    public BinaryTree(BinaryNode root) {
         _root = root;
-        _leftChild = leftChild;
-        _rightChild = rightChild;
     }
 
-    @Override
-    public String toString() {
-        return "BinaryTree [_leftChild=" + _leftChild + ", _rightChild=" + _rightChild + ", _root=" + _root + "]";
+    public BinaryNode getRoot() {
+        return _root;
+    }
+
+    public void setRoot(BinaryNode root) {
+        this._root = root;
     }
     
 }

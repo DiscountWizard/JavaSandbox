@@ -1,23 +1,23 @@
 package AdamSchoolProjects;
 
-public class Node {
+public class SingleLinkNode {
 
     private String _data;
-    private Node _next;
+    private SingleLinkNode _next;
 
-    public Node() {
+    public SingleLinkNode() {
         this(null, null);
     }
 
-    public Node(String data) {
+    public SingleLinkNode(String data) {
         this(data, null);
     }
 
-    public Node(Node nextNode) {
+    public SingleLinkNode(SingleLinkNode nextNode) {
         this(null, nextNode);
     }
 
-    public Node(String data, Node nextNode) {
+    public SingleLinkNode(String data, SingleLinkNode nextNode) {
         _data = data;
         _next = nextNode;
     }
@@ -26,7 +26,7 @@ public class Node {
         return _data;
     }
 
-    public Node next() {
+    public SingleLinkNode next() {
         return _next;
     }
     
