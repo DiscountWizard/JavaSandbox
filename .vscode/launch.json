@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch PQExample",
+            "request": "launch",
+            "mainClass": "AdamSchoolProjects.HuffmanEncoding.PartA.PQExample",
+            "projectName": "JavaSandbox_3e461f9a"
+        },
+        {
+            "type": "java",
+            "name": "Launch HuffmanCodes",
+            "request": "launch",
+            "mainClass": "AdamSchoolProjects.HuffmanEncoding.PartA.HuffmanCodes",
+            "projectName": "JavaSandbox_3e461f9a",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch HuffmanCodes",
+            "request": "launch",
+            "mainClass": "AdamSchoolProjects.HuffmanEncoding.HuffmanCodes",
+            "projectName": "JavaSandbox_3e461f9a",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": "${command:SpecifyProgramArgs}"
+        }
+    ]
+}
