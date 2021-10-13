@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinaryTree",
+            "request": "launch",
+            "mainClass": "AdamSchoolProjects.ProgrammingQuiz4.BinaryTree",
+            "projectName": "JavaSandbox_3e461f9a",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
             "name": "Launch PQExample",
             "request": "launch",
             "mainClass": "AdamSchoolProjects.HuffmanEncoding.PartA.PQExample",

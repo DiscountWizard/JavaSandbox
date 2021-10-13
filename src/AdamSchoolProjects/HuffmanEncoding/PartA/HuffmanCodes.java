@@ -68,7 +68,7 @@ public class HuffmanCodes {
         BinaryTree<Character> btprint = charPriority.poll().bt;
 
         for (int i = 0; i < 128; i++) {
-            System.out.println((char) i + " " + btprint.getPathTo((char) i));
+            System.out.println(i + " " + btprint.getPathTo((char) i));
         }
         
     }
