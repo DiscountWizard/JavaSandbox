@@ -48,13 +48,19 @@ public class BinaryTree {
                 farthestLeft();
                 return currNode.data;
             } else {
-                prevNode = currNode;
-                currNode = currNode.parent;
 
-                while (currNode.right == prevNode) {
+                do {
                     prevNode = currNode;
                     currNode = currNode.parent;
-                }
+                } while (currNode.right == prevNode);
+
+//                prevNode = currNode;
+//                currNode = currNode.parent;
+//
+//                while (currNode.right == prevNode) {
+//                    prevNode = currNode;
+//                    currNode = currNode.parent;
+//                }
 
                 return currNode.data;
             }
