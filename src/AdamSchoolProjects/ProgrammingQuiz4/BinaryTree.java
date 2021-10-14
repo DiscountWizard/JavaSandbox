@@ -27,11 +27,7 @@ public class BinaryTree {
 
         @Override
         public boolean hasNext() {
-            if (finalNode == currNode) {
-                return false;
-            } else {
-                return true;
-            }
+            return finalNode != currNode;
         }
     
         @Override
@@ -40,33 +36,18 @@ public class BinaryTree {
             if (currNode == null) {
                 currNode = root;
                 farthestLeft();
-                return currNode.data;
-            }
-
-            if (currNode.right != null) {
+            } else if (currNode.right != null) {
                 currNode = currNode.right;
                 farthestLeft();
-                return currNode.data;
             } else {
-
                 do {
                     prevNode = currNode;
                     currNode = currNode.parent;
                 } while (currNode.right == prevNode);
-
-//                prevNode = currNode;
-//                currNode = currNode.parent;
-//
-//                while (currNode.right == prevNode) {
-//                    prevNode = currNode;
-//                    currNode = currNode.parent;
-//                }
-
-                return currNode.data;
             }
 
+            return currNode.data;
         }
-
     }
 
     private class Node {

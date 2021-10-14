@@ -1,6 +1,13 @@
 package AdamSchoolProjects.HuffmanEncoding.Project1;
 
 public class BinaryHeap {
+    //implements a binary heap where the heap rule is the value in the parent
+    //node is less than
+    //or equal to the values in the child nodes
+
+    //the implementation uses parallel arrays to store the priorities and the
+    // trees
+    //you must use this implementation
 
     int priority[];
     HuffmanTree trees[];
@@ -13,26 +20,34 @@ public class BinaryHeap {
     }
 
     public void removeMin() {
-
+        //PRE: size != 0
+        //removes the priority and tree at the root of the heap
     }
 
     public int getMinPriority() {
+        //PRE: size != 0
+        //return the priority in the root of the heap
         return 0;
     }
 
     public HuffmanTree getMinTree() {
+        //PRE: size != 0
+        //return the tree in the root of the heap
         return new HuffmanTree();
     }
 
     public boolean full() {
+        //return true if the heap is full otherwise return false
         return true;
     }
 
     public void insert(int p, HuffmanTree t) {
-
+        //insert the priority p and the associated tree t into the heap
+        //PRE !full()
     }
 
     public int getSize() {
+        //return the number of values, (priority , tree) pairs, in the heap
         return 0;
     }
     

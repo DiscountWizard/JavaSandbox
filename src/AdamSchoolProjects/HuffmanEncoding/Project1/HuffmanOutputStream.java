@@ -16,12 +16,15 @@ public class HuffmanOutputStream {
     }
 
     public void writeBit(char bit) {
+        //PRE:bit == '0' || bit == '1'
         try {
 
         } catch (Exception e) { }
     }
 
     public void close() {
+        //write final byte (if needed)
+        //close the DataOutputStream
         try {
 
         } catch (Exception e) { }
