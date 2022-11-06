@@ -2,11 +2,9 @@ package AdamSchoolProjects.HuffmanEncoding.Project1;
 
 public class BinaryHeap {
     //implements a binary heap where the heap rule is the value in the parent
-    //node is less than
-    //or equal to the values in the child nodes
+    //node is less than or equal to the values in the child nodes
 
-    //the implementation uses parallel arrays to store the priorities and the
-    // trees
+    //the implementation uses parallel arrays to store the priorities and the trees
     //you must use this implementation
 
     int priority[];
